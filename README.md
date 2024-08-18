@@ -1,3 +1,45 @@
+
+---
+
+### **Frontend README**
+
+```markdown
+# Course Management Frontend
+
+This is the frontend application for the Course Management system, built with **ReactJS**. It provides an intuitive and user-friendly interface for managing courses and course instances.
+
+## Features
+
+- **Interactive UI**: Easy navigation and course management.
+- **React Router**: Seamless client-side routing.
+- **Axios**: Efficient API communication.
+- **Responsive Design**: Mobile-friendly interface.
+- **Dockerized**: Ready for containerized deployment.
+- **CI/CD Ready**: Integrated with GitHub Actions for automated builds.
+
+## Screenshots
+
+![Course List](docs/screenshots/course-list.png)
+*Figure 1: Course List View*
+
+![Add Course](docs/screenshots/add-course.png)
+*Figure 2: Add Course Form*
+
+## Prerequisites
+
+- **Node.js** (version 14 or later)
+- **npm** (version 6 or later)
+- **Docker**
+
+## Getting Started
+
+1. **Clone the Repository:**
+
+   ```bash
+   git clone https://github.com/cseazeem/course-management-frontend.git
+   cd course-management-frontend
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
