@@ -1,26 +1,20 @@
 # Use an official Node.js runtime as a parent image
-FROM node:20
+FROM node:16-alpine
 
 # Set the working directory in the container
 WORKDIR /app
 
-# Copy the package.json and package-lock.json files
+# Copy the package.json and package-lock.json
 COPY package*.json ./
 
-# Install the dependencies
+# Install dependencies
 RUN npm install
 
 # Copy the rest of the application code
 COPY . .
 
-# Build the app for production
-RUN npm run build
+# Start the React app in development mode
+CMD ["npm", "start"]
 
-# Install a simple web server to serve the static files
-RUN npm install -g serve
-
-# Set the command to serve the static files
-CMD ["serve", "-s", "build"]
-
-# Expose the port the app runs on
+# Expose the port React will run on
 EXPOSE 3000
